@@ -29,7 +29,7 @@
     path: "/var/www/planning"
     owner: "www-data"
     group: "www-data"
-    recurse: yes
+    recurse: true
 
 - name: Add GRANT OPTION for mariadb root user.
   mysql_user:
