@@ -1,2 +1,5 @@
 ---
-
+planning_force_update: false
+planning_git_branch_version: "19.10.xx"
+planning_separate_git_dir: "/usr/local/planning-biblio-git"
+planning_content_dest: "/var/www/planning/"

@@ -4,10 +4,13 @@ services: docker
 
 env:
   global:
-    - ROLE_NAME:
+    - ROLE_NAME: planning-biblio
   matrix:
     - MOLECULE_DISTRIB: debian10:latest
+      MOLECULE_PLAYBOOK: debian10-playbook.yml
+
     - MOLECULE_DISTRIB: debian9:latest
+      MOLECULE_PLAYBOOK: debian9-playbook.yml
 
 install:
   - pip install molecule docker
