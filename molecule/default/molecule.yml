@@ -19,7 +19,7 @@ provisioner:
   lint:
     name: ansible-lint
   playbooks:
-    converge: ${MOLECULE_PLAYBOOK}    
+    converge: ${MOLECULE_PLAYBOOK}
 verifier:
   name: testinfra
   lint:
