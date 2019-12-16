@@ -7,7 +7,7 @@
 - name: Check if planning-biblio directories already exists
   stat:
     path: "{{ planning_separate_git_dir }}"
-  register: planning_git_dir_stat
+  register: planning_git_dir
 
 - name: Clone Planning-biblio git repository
   git:
@@ -16,13 +16,13 @@
     version: "{{ planning_git_branch_version }}"
     separate_git_dir: "{{ planning_separate_git_dir }}"
     force: true
-  when: planning_git_dir_stat is not defined or planning_force_update
+  when: not planning_git_dir.stat.exists or planning_force_update
 
 - name: Composer update
   composer:
     command: update
     working_dir: "{{ planning_content_dest }}"
-  when: planning_git_dir_stat is not defined or planning_force_update
+  when: not planning_git_dir.stat.exists or planning_force_update
 
 - name: Change Planning Biblio directory owner
   file:
@@ -36,4 +36,4 @@
     name: root
     priv: '*.*:ALL,GRANT'
     state: present
-  when: planning_git_dir_stat is not defined or planning_force_update
+  when: not planning_git_dir.stat.exists or planning_force_update
