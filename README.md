@@ -42,7 +42,7 @@ planning_content_dest: "/var/www/planning/"
 
 ## Installation
 ```
-ansible-galaxy install supertarto.planning-biblio
+ansible-galaxy install supertarto.planning_biblio
 ```
 ## License
 GPL V3.0
