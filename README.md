@@ -9,7 +9,6 @@ A web server (only tested with Apache), mariadb, php7.0 or above. You can use th
 - supertarto.mariadb
 
 ## Tested plateform
-* Debian 9 (Stretch)
 * Debian 10 (Buster)
 
 ## Role variables
