@@ -1,5 +1,6 @@
 # Ansible Planning Biblio
 [![Build Status](https://travis-ci.org/supertarto/ansible-planning-biblio.svg?branch=master)](https://travis-ci.org/supertarto/ansible-planning-biblio)
+
 Install and configure Planning Biblio with Ansible.
 
 ## Requirements
