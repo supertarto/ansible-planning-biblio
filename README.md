@@ -1,7 +1,8 @@
 # Ansible Planning Biblio
-[![Build Status](https://travis-ci.com/supertarto/ansible-planning-biblio.svg?branch=master)](https://travis-ci.com/supertarto/ansible-planning-biblio)
+[![CI](https://github.com/supertarto/ansible-planning-biblio/workflows/CI/badge.svg?event=push)](https://github.com/supertarto/ansible-planning-biblio/actions?query=workflow%3ACI)
 
 Install and configure Planning Biblio with Ansible.
+THIS ROLE IS DEPRECATED AND NEED A REWRITE. Planning Biblio changed its structure with 20.00.xx
 
 ## Requirements
 A web server (only tested with Apache), mariadb, php7.0 or above. You can use thoses roles:
